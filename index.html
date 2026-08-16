@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AuthKeeper</title>
-  <meta name="description" content="AuthKeeper — OAuth token management for Google services.">
+  <title>Octopus Agent</title>
+  <meta name="description" content="Octopus Agent — a personal automation assistant that keeps your Google services connected.">
   <style>
     :root {
       --bg: #0f1115;
@@ -27,9 +27,21 @@
       justify-content: center;
       padding: 2rem 1rem;
     }
-    .container { max-width: 640px; text-align: center; }
+    .container { max-width: 680px; text-align: center; }
     h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; }
     p.sub { color: var(--muted); margin-top: 0.75rem; font-size: 1.05rem; }
+    .purpose {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .purpose h2 { font-size: 1.1rem; font-weight: 600; color: var(--accent); margin-bottom: 0.75rem; }
+    .purpose p { color: var(--text); font-size: 0.95rem; }
+    .purpose ul { padding-left: 1.25rem; margin-top: 0.75rem; }
+    .purpose li { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.4rem; }
     .links {
       display: flex;
       justify-content: center;
@@ -41,15 +53,15 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1.5rem 2rem;
-      min-width: 200px;
+      padding: 1.25rem 1.75rem;
+      min-width: 180px;
       text-decoration: none;
       color: var(--text);
       transition: border-color 0.2s, transform 0.2s;
     }
     .card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .card h2 { font-size: 1.1rem; font-weight: 600; color: var(--accent); }
-    .card p { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
+    .card h2 { font-size: 1rem; font-weight: 600; color: var(--accent); }
+    .card p { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
     footer {
       margin-top: 3rem;
       color: var(--muted);
@@ -63,8 +75,18 @@
 </head>
 <body>
   <div class="container">
-    <h1>AuthKeeper</h1>
-    <p class="sub">OAuth token management for Google services</p>
+    <h1>Octopus Agent</h1>
+    <p class="sub">A personal automation assistant for your Google services</p>
+
+    <div class="purpose">
+      <h2>What this app does</h2>
+      <p>Octopus Agent is a personal automation assistant that connects to your Google account to keep your services working together. It manages the secure authentication that lets your automation tools read and organize your email, documents, and calendar on your behalf.</p>
+      <ul>
+        <li>Keeps your Google services connected with secure, automatic authentication</li>
+        <li>Enables your personal automation workflows across Gmail, Drive, and Calendar</li>
+        <li>Operates only on your own account — no third-party users, no data sharing</li>
+      </ul>
+    </div>
 
     <div class="links">
       <a class="card" href="/privacy">
@@ -78,7 +100,7 @@
     </div>
 
     <footer>
-      <p>© 2026 AuthKeeper. All rights reserved.</p>
+      <p>© 2026 Octopus Agent. All rights reserved.</p>
     </footer>
   </div>
 </body>
